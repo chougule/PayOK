@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_mobile_login"
+    app:startDestination="@id/mobileLoginFragment">
+
+    <fragment
+        android:id="@+id/mobileLoginFragment"
+        android:name="com.example.sampleapp.application.presentation.module.login.loginWithMobile.LoginWithMobileFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login_with_mobile">
+        <action
+            android:id="@+id/action_MobileLogin_to_EntryPin"
+            app:destination="@id/entryPinFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/entryPinFragment"
+        android:name="com.example.sampleapp.application.presentation.module.login.setpin.PinEntryFragment"
+        tools:layout="@layout/fragment_pin_entry">
+        <!--the argument name should match with data class member-->
+        <argument
+            android:name="mavericks:arg"
+            android:defaultValue=""
+            app:nullable="false" />
+    </fragment>
+
+</navigation>

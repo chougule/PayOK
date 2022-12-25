@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <include app:graph="@navigation/nav_landing" />
+    <include app:graph="@navigation/nav_login" />
+    <include app:graph="@navigation/nav_mobile_login"/>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.sampleapp.application.presentation.module.main.MainFragment"
+        android:label="@string/LoginFragmentTitle"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/actionAuthenticateUser"
+            app:destination="@id/nav_login"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/actionNavigateToLanding"
+            app:destination="@id/nav_landing"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/actionNavigateToMobileLogin"
+            app:destination="@id/nav_mobile_login"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

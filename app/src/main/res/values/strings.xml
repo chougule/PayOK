@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="LoginFragmentTitle">Login</string>
+    <string name="LandingFragmentTitle">Home</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="enter_pin_title">Enter 6 digit pin</string>
+    <string name="signIn">Sign In</string>
+    <string name="userID">User Id</string>
+    <string name="password">Password</string>
+    <string name="genericErrorMessage">Something went wrong</string>
+    <string name="pin_entry_instruction">Please remember this pin, will be used for authentication in future</string>
+    <string name="forgot_pin">Forgot Pin?</string>
+    <string name="landingHome">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_list">List</string>
+    <string name="menu_home">Home</string>
+
+</resources>
